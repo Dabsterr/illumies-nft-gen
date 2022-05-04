@@ -5,3 +5,6 @@ images/*.png
 .ipynb_checkpoints/
 *.pyc
 /venv
+/images
+/metadata
+/results

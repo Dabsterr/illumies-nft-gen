@@ -1,4 +1,3 @@
-from IPython.display import display 
 from PIL import Image
 import argparse
 import random
@@ -88,20 +87,20 @@ def generate_unique_images(amount, config):
       file_name = str(item["tokenId"]) + ".png"
       rgb_im.save("./images/" + file_name)
   
-  # v1.0.2 addition
-  print("\nUnique NFT's generated. After uploading images to IPFS, please paste the CID below.\nYou may hit ENTER or CTRL+C to quit.")
-  cid = input("IPFS Image CID (): ")
-  if len(cid) > 0:
-    if not cid.startswith("ipfs://"):
-      cid = "ipfs://{}".format(cid)
-    if cid.endswith("/"):
-      cid = cid[:-1]
-    for i, item in enumerate(all_images):
-      with open('./metadata/' + str(item["tokenId"]) + '.json', 'r') as infile:
-        original_json = json.loads(infile.read())
-        original_json["image"] = original_json["image"].replace(config["baseURI"]+"/", cid+"/")
-        with open('./metadata/' + str(item["tokenId"]) + '.json', 'w') as outfile:
-          json.dump(original_json, outfile, indent=4)
+  # # v1.0.2 addition
+  # print("\nUnique NFT's generated. After uploading images to IPFS, please paste the CID below.\nYou may hit ENTER or CTRL+C to quit.")
+  # cid = input("IPFS Image CID (): ")
+  # if len(cid) > 0:
+  #   if not cid.startswith("ipfs://"):
+  #     cid = "ipfs://{}".format(cid)
+  #   if cid.endswith("/"):
+  #     cid = cid[:-1]
+  #   for i, item in enumerate(all_images):
+  #     with open('./metadata/' + str(item["tokenId"]) + '.json', 'r') as infile:
+  #       original_json = json.loads(infile.read())
+  #       original_json["image"] = original_json["image"].replace(config["baseURI"]+"/", cid+"/")
+  #       with open('./metadata/' + str(item["tokenId"]) + '.json', 'w') as outfile:
+  #         json.dump(original_json, outfile, indent=4)
 
 
 

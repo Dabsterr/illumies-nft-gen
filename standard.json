@@ -1,0 +1,73 @@
+{
+  "layers": [
+    {
+      "name": "Background",
+      "values": [
+        "Beach", "Blue", "Football Stadium", "Olive", "Orange", "Pink", "Purple", "Red", "Solana", "Space", "Target Crosshair", "Yellow"
+      ],
+      "trait_path": "./trait-layers/Background",
+      "filename": [
+        "Beach", "Blue", "Football Stadium", "Olive", "Orange", "Pink", "Purple", "Red", "Solana", "Space", "Target Crosshair", "Yellow"
+      ],
+      "weights": [1,17.5,1,17.5,15,5,5,17.5,1,1,1,17.5]
+    },
+    {
+      "name": "Aura",
+      "values": [
+        "Blue", "Cyberpunk", "Pink", "Purple", "Rainbow Gradient", "Red", "Transparent", "Yellow", "Zombie"
+      ],
+      "trait_path": "./trait-layers/Skin",
+      "filename": [
+        "Blue Aura", "Cyberpunk", "Pink Aura", "Purple Aura", "Rainbow Gradient", "Red Aura", "Transparent Aura", "Yellow Aura", "Zombie Aura"
+      ],
+      "weights": [26,2.33,5,5,2.33,26,5,26,2.33]
+    },
+    {
+      "name": "Clothes",
+      "values": [
+        "American Football Jersey", "Barong Tagalog", "Biggie Smalls Sweater", "Bitcoin Necklace", "Construction Uniform", "Detective Coat", "Godfather Suit", "Gryffindor Robes", "Harlequinn", "Henley Shirt", "Hoodie", "Hugh Hefner Coat", "Jedi Robe", "Kimono", "Kyle Brofloski", "Leather Jacket", "Nude", "Puffy Jacket", "Roman Toga", "Romani", "Royal Robe", "Space Suit", "Spider Suit", "Star Trek Uniform", "Tracksuit", "Turtleneck", "White Shirt"
+      ],
+      "trait_path": "./trait-layers/Clothes",
+      "filename": [
+        "American Football Jersey", "Barong Tagalog", "Biggie Smalls Sweater", "Bitcoin Necklace", "Construction Uniform", "Detective Coat", "Godfather Suit", "Gryffindor Robes", "Harlequinn", "Henley Shirt", "Hoodie", "Hugh Hefner Coat", "Jedi Robe", "Kimono", "Kyle Brofloski", "Leather Jacket", "Nude", "Puffy Jacket", "Roman Toga", "Romani", "Royal Robe", "Space Suit", "Spider Suit", "Star Trek Uniform", "Tracksuit", "Turtleneck", "White Shirt"
+      ],
+      "weights": [6,0.833,0.833,0.833,8,4,0.833,0.833,0.833,8,8,4,0.833,4,6,4,8,6,4,0.833,0.833,0.833,0.833,0.833,6,6,8]
+    },
+    {
+      "name": "Eyes",
+      "values": ["3D Glasses", "Aviator Shades", "Cyclops Shades", "Eye Patch", "Glasses", "Laser Eyes", "Monocle", "Nude", "Raybands", "Shutter Shades", "Third Eye"],
+      "trait_path": "./trait-layers/Eyes",
+      "filename": ["3D Glasses", "Aviator Shades", "Cyclops Shades", "Eye Patch", "Glasses", "Laser Eyes", "Monocle", "Nude", "Raybands", "Shutter Shades", "Third Eye"],
+      "weights": [6.666,10,3.333,6.666,20,3.333,6.666,20,10,10,3.333]
+    },
+    {
+      "name": "Mouth",
+      "values": ["Borat Moustache", "Charlie Mortdecai Moustache", "Cigarette", "Gandalf Pipe", "Joint", "Jules Winfield Moustache", "Nude", "Surgical Mask", "Vape"],
+      "trait_path": "./trait-layers/Mouth",
+      "filename": ["Borat Moustache", "Charlie Mortdecai Moustache", "Cigarette", "Gandalf Pipe", "Joint", "Jules Winfield Moustache", "Nude", "Surgical Mask", "Vape"],
+      "weights": [6.67,3.33,15,3.33,6.67,3.33,40,6.67,15]
+    },
+    {
+      "name": "Head",
+      "values": [
+        "Bucket Hat", "Cap", "Corn Rows", "Cowboy Hat", "Crown", "Dreadlocks", "Farmer Hat", "Fedora", "Fisherman Hat", "Halo", "Hard Hat", "Newsboy Cap", "Ninja Bandana", "Nude", "Orange Beanie", "Red Bandana", "Visor"
+      ],
+      "trait_path": "./trait-layers/Head",
+      "filename": [
+        "Bucket Hat", "Cap", "Corn Rows", "Cowboy Hat", "Crown", "Dreadlocks", "Farmer Hat", "Fedora", "Fisherman Hat", "Halo", "Hard Hat", "Newsboy Cap", "Ninja Bandana", "Nude", "Orange Beanie", "Red Bandana", "Visor"
+      ],
+      "weights": [4,10,7.5,4,2.5,7.5,10,4,10,2.5,7.5,4,2.5,10,7.5,2.5,4]
+    }
+
+  ],
+  "incompatibilities": [
+    {
+      "layer": "Background",
+      "value": "Blue",
+      "incompatible_with": ["Python Logo 2"]
+    }
+  ],
+  "baseURI": ".",
+  "name": "NFT #",
+  "description": "This is a description for this NFT series."
+}
